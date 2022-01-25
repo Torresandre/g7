@@ -18,41 +18,26 @@
     
 </head>
 <body  >
-    <header >
-        <nav class="headerMenu">
-            <ul>
-                <img src="/src/assets/G7Sublogo2.png"/>
-               
-               
-              </ul>
-        </nav>
-
-    </header>
-    <main class="container">
-        <div class="img1">
-            
-            <div class="containerdaimagem">
-                <img src="src/assets/part1.png" alt="main"/>
-                <button >Baixe agora seu e-book</button>
-            </div>
-            <div>
-                
-            </div>
-        </div>
-       
-
-        <div class="img2">
-            <section>
-
-            </section>
-            <section class="containerdaimagem">
-                <img src="src/assets/part2.png" alt="main"/>
-            </section>
-        </div>
-
-    </main>
-    <footer>
-
-    </footer>
+   <div class="container">
+       <img src="./src/assets/índice.png"/>
+       <div class="form1">
+        <form method="post" action="enviar.php">
+ 
+            <label>Nome</label>
+            <input name="name" placeholder="Seu Nome">
+             
+            <label>Email</label>
+            <input name="email" type="email" placeholder="Seu email">
+             
+           
+            <label>*Quanto é 2+2? (Anti-spam)</label>
+            <input name="human" placeholder="Responda aqui">
+           
+             
+            <input id="submit" name="submit" type="submit" value="Baixe aqui seu material" placeholder="">
+             
+            </form>
+       </div>
+   </div>
 </body>
 </html>
