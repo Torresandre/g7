@@ -5,93 +5,104 @@
     
   }
 
+
 .container {
     display: flex;
     flex-direction: column;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
     
+  
    
-    width: 100%;
+}
+img {
+    width: 100vw;
+    margin: 0;
+}
 
-
+.container * {
+  box-sizing: border-box;
+}
+.formform1{
+    display: flex;
+    
+    
 }
 .form1 {
-    background-color: #3cb0fd;
-    width: 45%;
-    height: auto;
+
     position: absolute;
-    margin-top: 175%;
-    margin-left: 50%;
-    display: flex;
-    align-items: center;
-    border-radius: 0.5rem;
-}
-form {
-    display: flex;
-    flex-direction: column;
-    padding: 10%;
+    width: 50%;
+    margin-left: 45%;
+    margin-top: 20vh;
     justify-content: center;
-    width: 80%;
-
-   
-    
-   
-}
-label {
-	display:block;
-	padding: 1rem;
-	letter-spacing:2px;
-    text-align: right;
-   
-}
-
-input {
-	
-	height: 3rem;
-	background:#efefef;
-	border-radius:5px;
-	-moz-border-radius:5px;
-	-webkit-border-radius:5px;
-	border:1px solid #00557C;
-	
-	margin-top:;
-	font-size:0.9em;
-	color:#3a3a3a;
-}
-
-	input:focus{
-		border:1px solid #97d6eb;
-	}
-
-
-
-#submit {
-    background: #00557C;
-	font-weight: 600;
-	height:3rem;
-	
-	border:none;
-	margin-top:1.5rem;
-	cursor:pointer;
+    background-color: #00557C;
+    border-radius: 0.5rem;
+    padding: 5%;
 
 }
 
-	#submit:hover {
-		opacity:0.9;
-	}
+.flex-outer,
+.flex-inner {
+  list-style-type: none;
+  padding: 0;
+}
 
- 
-    .form2 {
-        background-color: #3cb0fd;
-        width: 50%;
-        
-        position: absolute;
-        margin-top: 540%;
-        margin-left: 25%;
-        display: flex;
-        align-items: center;
-        border-radius: 0.5rem;
-    }
+.flex-outer {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.flex-outer li,
+.flex-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
 
 
+.flex-outer > li:not(:last-child) {
+  margin-bottom: 20px;
+}
 
+.flex-outer li label,
+.flex-outer li p {
+  padding: 8px;
+  font-weight: 300;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+}
+
+.flex-outer > li > label,
+.flex-outer li p {
+  flex: 1 0 120px;
+  max-width: 220px;
+}
+
+.flex-outer > li > label + *,
+.flex-inner {
+  flex: 1 0 220px;
+}
+
+.flex-outer li p {
+  margin: 0;
+}
+
+.flex-outer li input:not([type='checkbox']),
+.flex-outer li textarea {
+  padding: 15px;
+  border: none;
+}
+
+.flex-outer li button {
+  margin-left: auto;
+  padding: 8px 16px;
+  border: none;
+  background: #333;
+  color: #f2f2f2;
+  text-transform: uppercase;
+  letter-spacing: .09em;
+  border-radius: 2px;
+}
 

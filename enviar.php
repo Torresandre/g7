@@ -2,16 +2,16 @@
 
 $name = $_POST['name'];
 $email = $_POST['email'];
-$message = $_POST['message'];
+$phone = $_POST['phone'];
 $from = 'De: RoleBIT';
-$to = 'bit@rolebit.com';
+$to = 'g7digital.mkt@gmail.com';
 $subject = 'Website';
 $human = $_POST['human'];
 
-$body = "De: $name\n E-Mail: $email\n Mensagem:\n $message";
+$body = "De: $name\n Telefone: $phone E-Mail: $email\n ";
 
 if ($_POST['submit']) {
-if ($name != '' && $email != '') {
+if ($name != '' && $email != '' && $phone != '') {
 if ($human == '4') {
 if (mail ($to, $subject, $body, $from)) {
 echo '<p>Sua mensagem foi enviada!</p>';
